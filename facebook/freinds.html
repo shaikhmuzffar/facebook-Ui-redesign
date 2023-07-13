@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>facbook clone</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <section class="navigation_section ">
+        <nav class="navigation">
+            <div class="logoAndSearch">
+                <a class="logo" href="home.html">
+                    <img src="images/logo/facebook.png" alt="" width="30px">
+                </a>
+                <div class="searchBox">
+                    <box-icon name='search'></box-icon>
+                    <input type="text" placeholder="Search Facebook">
+                </div>
+            </div>
+            <ul class="navbar">
+                <li class="nav_link "><a href="home.html"><img src="images/navigations/home.svg" alt=""></a></li>
+                <li class="nav_link active"><a href="freinds.html"><img src="images/navigations/friends.svg" alt=""></a></li>
+                <li class="nav_link"><a href="watch.html"><img src="images/navigations/watch.svg" alt=""></a>
+                </li>
+                <li class="nav_link"><a href=""><img src="images/navigations/marketplace.svg" alt=""></a></li>
+                <li class="nav_link"><a href=""><img src="images/navigations/groups.svg" alt=""></a></li>
+            </ul>
+            <div class="userActions">
+                <a href="" class="userAction">
+                    <img src="images/navigations/apps.svg" alt="">
+                </a>
+                <a href="" class="userAction">
+                    <img src="images/navigations/messenger.svg" alt="">
+                </a>
+                <a href="" class="userAction">
+                    <img src="images/navigations/notification.svg" alt="">
+                </a>
+                <div class="userInfo" onclick="settingMenuToggle()">
+                    <div class="userImg userProfileImg">
+                            <img  src="images/users/user1.jpg" width="30px">
+                    </div>
+                    <div class="leftbar_menu settingMenu">
+                        <div class="userProfile">
+                            <div class="">
+                                <div class="userProfileImg">
+                                    <img src="images/users/user1.jpg" width="30px">
+                                </div>
+                                <div class="userProfileName">
+                                    Jhon Doe
+                                </div>
+                            </div>
+                            <hr>
+                            <a href="profile.html">See all profiles</a>
+                        </div>
+                        <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt="">
+                            <span>Setting & privacy</span><i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt="">
+                            <span>Help & support</span><i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt="">
+                            <span>All
+                                Display & accessibility</span><i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt="">
+                            <span>give feedback</span></a>
+                        <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt="">
+                            <span>Logout</span></a>
+                        <div class="footer sideBox">
+                            <span><a href="">privacy</a> &middot; <a href="">Terms</a> &middot; <a
+                                    href="">Advertising</a> &middot;
+                                <a href="">Ad choices</a> &middot; <a href="">Cookies</a> &middot; <a href="">More</a>
+                                &middot; <a href="">Meta &copy; 2023</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- friends main container -->
+    <div class="friends_mainContainer">
+        <!-- left container -->
+        <div class="friends_leftContainer">
+            <div class="titleAndSettings">
+                <h3>friends</h3>
+                <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="leftbar_menu">
+                <a href="" class="leftbar_menu_link active" style="margin-top: 12px;"><img
+                        src="images/freindPageIcons/friends1.png" alt=""> <span>Home</a>
+                <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt=""> <span>Friend
+                        requests</span><i class="fa-solid fa-chevron-right"></i></a>
+                <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt="">
+                    <span>Suggestions </span><i class="fa-solid fa-chevron-right"></i></a>
+                <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt=""> <span>All
+                        Friends</span><i class="fa-solid fa-chevron-right"></i></a>
+                <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt="">
+                    <span>Birthdays</span><i class="fa-solid fa-chevron-right"></i></a>
+                <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt=""> <span>Custom
+                        lists</span><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+        <!-- right container -->
+        <div class="friends_rightContainer">
+            <div class="freind_title"
+                style="display: flex;justify-content: space-between;background-color: transparent;margin-top: 20px;padding-top:20px;">
+                <h3 style="font-size: 20px;">Freind Requests</h3>
+                <a style="font-size: 17px;color:#1770E6 ;">See all</a>
+            </div>
+            <div class="friendsReqBox">
+                <div class="friendReq">
+                    <img class="friendReqImg" src="images/freinds/friend1.jpg" alt="" width="100px">
+                    <div class="friendReqInfo">
+                        <span class="friendReqInfoName">jhone doe</span>
+                        <div class="friendReqInfoMutuals">
+                            <div>
+                                <img src="images/users/user3.jpg" alt="" width="20px">
+                            </div>
+                            <span>2 mutuals freinds</span>
+                        </div>
+                        <div class="friendReqInfoUserActions">
+                            <a href="" class="confirm">confirm</a>
+                            <a href="" class="delete">delete</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="friendReq">
+                    <img class="friendReqImg" src="images/freinds/friend2.jpg" alt="" width="100px">
+                    <div class="friendReqInfo">
+                        <span class="friendReqInfoName">jhone doe</span>
+                        <div class="friendReqInfoMutuals">
+                            <div>
+                                <img src="images/users/user2.jpg" alt="" width="20px">
+                                <img src="images/users/user4.jpg" alt="" width="20px">
+                            </div>
+                            <span>2 mutuals freinds</span>
+                        </div>
+                        <div class="friendReqInfoUserActions">
+                            <a href="" class="confirm">confirm</a>
+                            <a href="" class="delete">delete</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="friendReq">
+                    <img class="friendReqImg" src="images/freinds/friend3.jpg" alt="" width="100px">
+                    <div class="friendReqInfo">
+                        <span class="friendReqInfoName">jhone doe</span>
+                        <div class="friendReqInfoMutuals">
+                            <div>
+                                <img src="images/users/user4.jpg" alt="" width="20px">
+                            </div>
+                            <span>2 mutuals freinds</span>
+                        </div>
+                        <div class="friendReqInfoUserActions">
+                            <a href="" class="confirm">confirm</a>
+                            <a href="" class="delete">delete</a>
+                        </div>
+                    </div>
+                    .
+                </div>
+                <div class="friendReq">
+                    <img class="friendReqImg" src="images/freinds/friend4.jpg" alt="" width="100px">
+                    <div class="friendReqInfo">
+                        <span class="friendReqInfoName">jhone doe</span>
+                        <div class="friendReqInfoMutuals">
+                            <div>
+                            </div>
+                            <!-- <span>2 mutuals freinds</span> -->
+                        </div>
+                        <div class="friendReqInfoUserActions">
+                            <a href="" class="confirm">confirm</a>
+                            <a href="" class="delete">delete</a>
+                        </div>
+                    </div>
+                    .
+                </div>
+                <div class="friendReq">
+                    <img class="friendReqImg" src="images/freinds/friend5.jpg" alt="" width="100px">
+                    <div class="friendReqInfo">
+                        <span class="friendReqInfoName">jhone doe</span>
+                        <div class="friendReqInfoMutuals">
+                            <div>
+                                <img src="images/users/user2.jpg" alt="" width="20px">
+                                <img src="images/users/user3.jpg" alt="" width="20px">
+                            </div>
+                            <span>2 mutuals freinds</span>
+                        </div>
+                        <div class="friendReqInfoUserActions">
+                            <a href="" class="confirm">confirm</a>
+                            <a href="" class="delete">delete</a>
+                        </div>
+                    </div>
+                    .
+                </div>
+                <div class="friendReq">
+                    <img class="friendReqImg" src="images/freinds/friend6.jpg" alt="" width="100px">
+                    <div class="friendReqInfo">
+                        <span class="friendReqInfoName">jhone doe</span>
+                        <div class="friendReqInfoMutuals">
+                            <div>
+                                <img src="images/users/user2.jpg" alt="" width="20px">
+                                <img src="images/users/user3.jpg" alt="" width="20px">
+                            </div>
+                            <span>2 mutuals freinds</span>
+                        </div>
+                        <div class="friendReqInfoUserActions">
+                            <a href="" class="confirm">confirm</a>
+                            <a href="" class="delete">delete</a>
+                        </div>
+                    </div>
+                    .
+                </div>
+                <div class="friendReq">
+                    <img class="friendReqImg" src="images/freinds/friend7.jpg" alt="" width="100px">
+                    <div class="friendReqInfo">
+                        <span class="friendReqInfoName">jhone doe</span>
+                        <div class="friendReqInfoMutuals">
+                            <div>
+                                <img src="images/users/user2.jpg" alt="" width="20px">
+                                <img src="images/users/user3.jpg" alt="" width="20px">
+                            </div>
+                            <span>2 mutuals freinds</span>
+                        </div>
+                        <div class="friendReqInfoUserActions">
+                            <a href="" class="confirm">confirm</a>
+                            <a href="" class="delete">delete</a>
+                        </div>
+                    </div>
+                    .
+                </div>
+                <div class="friendReq">
+                    <img class="friendReqImg" src="images/freinds/friend8.jpg" alt="" width="100px">
+                    <div class="friendReqInfo">
+                        <span class="friendReqInfoName">jhone doe</span>
+                        <div class="friendReqInfoMutuals">
+                            <div>
+                                <img src="images/users/user2.jpg" alt="" width="20px">
+                                <img src="images/users/user3.jpg" alt="" width="20px">
+                            </div>
+                            <span>2 mutuals freinds</span>
+                        </div>
+                        <div class="friendReqInfoUserActions">
+                            <a href="" class="confirm">confirm</a>
+                            <a href="" class="delete">delete</a>
+                        </div>
+                    </div>
+                    .
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script>
+        let userProfile=document.querySelector('.userProfileImg');
+        let settingMenu=document.querySelector('.settingMenu');
+        userProfile.addEventListener('click',()=>{
+            settingMenu.classList.toggle('show')
+        })
+        function settingMenuToggle(){
+
+        }
+    </script>
+</body>
+
+</html>

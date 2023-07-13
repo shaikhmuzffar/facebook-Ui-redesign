@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>facbook clone</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <section class="navigation_section ">
+        <nav class="navigation">
+            <div class="logoAndSearch">
+                <a class="logo" href="home.html">
+                    <img src="images/logo/facebook.png" alt="" width="30px">
+                </a>
+                <div class="searchBox">
+                    <box-icon name='search'></box-icon>
+                    <input type="text" placeholder="Search Facebook">
+                </div>
+            </div>
+            <ul class="navbar">
+                <li class="nav_link "><a href="home.html"><img src="images/navigations/home.svg" alt=""></a></li>
+                <li class="nav_link "><a href="freinds.html"><img src="images/navigations/friends.svg" alt=""></a></li>
+                <li class="nav_link active"><a href="watch.html"><img src="images/navigations/watch.svg" alt=""></a>
+                </li>
+                <li class="nav_link"><a href=""><img src="images/navigations/marketplace.svg" alt=""></a></li>
+                <li class="nav_link"><a href=""><img src="images/navigations/groups.svg" alt=""></a></li>
+            </ul>
+            <div class="userActions">
+                <a href="" class="userAction">
+                    <img src="images/navigations/apps.svg" alt="">
+                </a>
+                <a href="" class="userAction">
+                    <img src="images/navigations/messenger.svg" alt="">
+                </a>
+                <a href="" class="userAction">
+                    <img src="images/navigations/notification.svg" alt="">
+                </a>
+                <div class="userInfo" onclick="settingMenuToggle()">
+                    <div class="userImg userProfileImg">
+                            <img  src="images/users/user1.jpg" width="30px">
+                    </div>
+                    <div class="leftbar_menu settingMenu">
+                        <div class="userProfile">
+                            <div class="">
+                                <div class="userProfileImg">
+                                    <img src="images/users/user1.jpg" width="30px">
+                                </div>
+                                <div class="userProfileName">
+                                    Jhon Doe
+                                </div>
+                            </div>
+                            <hr>
+                            <a href="profile.html">See all profiles</a>
+                        </div>
+                        <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt="">
+                            <span>Setting & privacy</span><i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt="">
+                            <span>Help & support</span><i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt="">
+                            <span>All
+                                Display & accessibility</span><i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt="">
+                            <span>give feedback</span></a>
+                        <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt="">
+                            <span>Logout</span></a>
+                        <div class="footer sideBox">
+                            <span><a href="">privacy</a> &middot; <a href="">Terms</a> &middot; <a
+                                    href="">Advertising</a> &middot;
+                                <a href="">Ad choices</a> &middot; <a href="">Cookies</a> &middot; <a href="">More</a>
+                                &middot; <a href="">Meta &copy; 2023</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- friends main container -->
+    <div class="friends_mainContainer">
+        <!-- left container -->
+        <div class="friends_leftContainer">
+            <div class="titleAndSettings">
+                <h3>watch</h3>
+                <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="searchBox">
+                <box-icon name='search'></box-icon>
+                <input type="text" placeholder="Search Videos">
+            </div>
+            <div class="leftbar_menu">
+                <a href="" class="leftbar_menu_link active" style="margin-top: 12px;"><img
+                        src="images/freindPageIcons/friends1.png" alt=""> <span>Home</a>
+                <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt=""> <span>Home
+                        Live</span></a>
+                <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt="">
+                    <span>Reels </span></a>
+                <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt=""> <span>Shows</span></a>
+                <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt="">
+                    <span>Explore</span></a>
+                <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt=""> <span>Saved videos
+                        </span></a>
+            </div>
+        </div>
+        <!-- right container -->
+        <div class="friends_rightContainer">
+            <div class="post ">
+                <div class="user">
+                    <div class="userImg">
+                        <img src="images/users/user3.jpg" alt="">
+                    </div>
+                    <div class="userInformation">
+                        <span class="name">Jhon Doe</span>
+                        <span class="postStatus">rome, italy &middot; 5 min ago &middot; <box-icon
+                                name='world'></box-icon></span>
+                    </div>
+                </div>
+                <p class="postDescription">Happy Birthday &#127881;&#127882;&#129321; <span
+                        class="hashtags">@jhonDoe</span></p>
+                <div class="video">
+                    <img class="postImg" src="images/watchPage/video2.jpg" alt="">
+                    <img class="playButton" src="images/watchPage/play-button.png" alt="">
+                </div>
+                <div class="postReactions">
+                    <div class="likes">
+                        <div>
+                            <img src="images/postIcons/liked2.png" alt="">
+                            <img src="images/postIcons/love.png" alt="">
+                        </div>
+                        <span>You and 20k others</span>
+                    </div>
+                    <div class="commentsAndShares">
+                        <a href="" class="comments">2.2k <img src="images/postIcons/comment.png"></a>
+                        <a href="" class="comments">5k <img src="images/postIcons/share.png"></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="postUserActions">
+                    <a href="" class="like"><img src="images/postIcons/liked.png">Like</a>
+                    <a href="" class="like"><img src="images/postIcons/comment.png">Comment</a>
+                    <a href="" class="like"><img src="images/postIcons/share.png">Share</a>
+                </div>
+                <a href="" class="more"><img src="images/postIcons/more.png" alt="" width="20px"></a>
+            </div>
+            <div class="post ">
+                <div class="user">
+                    <div class="userImg">
+                        <img src="images/users/user3.jpg" alt="">
+                    </div>
+                    <div class="userInformation">
+                        <span class="name">Jhon Doe</span>
+                        <span class="postStatus">rome, italy &middot; 5 min ago &middot; <box-icon
+                                name='world'></box-icon></span>
+                    </div>
+                </div>
+                <p class="postDescription">Happy Birthday &#127881;&#127882;&#129321; <span
+                        class="hashtags">@jhonDoe</span></p>
+                        <div class="video">
+                            <img class="postImg" src="images/watchPage/video1.jpg" alt="">
+                            <img class="playButton" src="images/watchPage/play-button.png" alt="">
+                        </div>
+                <div class="postReactions">
+                    <div class="likes">
+                        <div>
+                            <img src="images/postIcons/liked2.png" alt="">
+                            <img src="images/postIcons/love.png" alt="">
+                        </div>
+                        <span>You and 20k others</span>
+                    </div>
+                    <div class="commentsAndShares">
+                        <a href="" class="comments">2.2k <img src="images/postIcons/comment.png"></a>
+                        <a href="" class="comments">5k <img src="images/postIcons/share.png"></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="postUserActions">
+                    <a href="" class="like"><img src="images/postIcons/liked.png">Like</a>
+                    <a href="" class="like"><img src="images/postIcons/comment.png">Comment</a>
+                    <a href="" class="like"><img src="images/postIcons/share.png">Share</a>
+                </div>
+                <a href="" class="more"><img src="images/postIcons/more.png" alt="" width="20px"></a>
+            </div>
+            <div class="post ">
+                <div class="user">
+                    <div class="userImg">
+                        <img src="images/users/user3.jpg" alt="">
+                    </div>
+                    <div class="userInformation">
+                        <span class="name">Jhon Doe</span>
+                        <span class="postStatus">rome, italy &middot; 5 min ago &middot; <box-icon
+                                name='world'></box-icon></span>
+                    </div>
+                </div>
+                <p class="postDescription">Happy Birthday &#127881;&#127882;&#129321; <span
+                        class="hashtags">@jhonDoe</span></p>
+                        <div class="video">
+                            <img class="postImg" src="images/watchPage/video3.jpg" alt="">
+                            <img class="playButton" src="images/watchPage/play-button.png" alt="">
+                        </div>
+                <div class="postReactions">
+                    <div class="likes">
+                        <div>
+                            <img src="images/postIcons/liked2.png" alt="">
+                            <img src="images/postIcons/love.png" alt="">
+                        </div>
+                        <span>You and 20k others</span>
+                    </div>
+                    <div class="commentsAndShares">
+                        <a href="" class="comments">2.2k <img src="images/postIcons/comment.png"></a>
+                        <a href="" class="comments">5k <img src="images/postIcons/share.png"></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="postUserActions">
+                    <a href="" class="like"><img src="images/postIcons/liked.png">Like</a>
+                    <a href="" class="like"><img src="images/postIcons/comment.png">Comment</a>
+                    <a href="" class="like"><img src="images/postIcons/share.png">Share</a>
+                </div>
+                <a href="" class="more"><img src="images/postIcons/more.png" alt="" width="20px"></a>
+            </div>
+            <div class="post ">
+                <div class="user">
+                    <div class="userImg">
+                        <img src="images/users/user3.jpg" alt="">
+                    </div>
+                    <div class="userInformation">
+                        <span class="name">Jhon Doe</span>
+                        <span class="postStatus">rome, italy &middot; 5 min ago &middot; <box-icon
+                                name='world'></box-icon></span>
+                    </div>
+                </div>
+                <p class="postDescription">Happy Birthday &#127881;&#127882;&#129321; <span
+                        class="hashtags">@jhonDoe</span></p>
+                        <div class="video">
+                            <img class="postImg" src="images/watchPage/video4.jpg" alt="">
+                            <img class="playButton" src="images/watchPage/play-button.png" alt="">
+                        </div>
+                <div class="postReactions">
+                    <div class="likes">
+                        <div>
+                            <img src="images/postIcons/liked2.png" alt="">
+                            <img src="images/postIcons/love.png" alt="">
+                        </div>
+                        <span>You and 20k others</span>
+                    </div>
+                    <div class="commentsAndShares">
+                        <a href="" class="comments">2.2k <img src="images/postIcons/comment.png"></a>
+                        <a href="" class="comments">5k <img src="images/postIcons/share.png"></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="postUserActions">
+                    <a href="" class="like"><img src="images/postIcons/liked.png">Like</a>
+                    <a href="" class="like"><img src="images/postIcons/comment.png">Comment</a>
+                    <a href="" class="like"><img src="images/postIcons/share.png">Share</a>
+                </div>
+                <a href="" class="more"><img src="images/postIcons/more.png" alt="" width="20px"></a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script>
+        let userProfile=document.querySelector('.userProfileImg');
+        let settingMenu=document.querySelector('.settingMenu');
+        userProfile.addEventListener('click',()=>{
+            settingMenu.classList.toggle('show')
+        })
+        function settingMenuToggle(){
+
+        }
+    </script>
+</body>
+
+</html>

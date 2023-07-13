@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>facbook clone</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <section class="navigation_section ">
+        <nav class="navigation">
+            <div class="logoAndSearch">
+                <a class="logo" href="home.html">
+                    <img src="images/logo/facebook.png" alt="" width="30px">
+                </a>
+                <div class="searchBox">
+                    <box-icon name='search'></box-icon>
+                    <input type="text" placeholder="Search Facebook">
+                </div>
+            </div>
+            <ul class="navbar">
+                <li class="nav_link active"><a href="home.html"><img src="images/navigations/home.svg" alt=""></a></li>
+                <li class="nav_link "><a href="freinds.html"><img src="images/navigations/friends.svg" alt=""></a></li>
+                <li class="nav_link"><a href="watch.html"><img src="images/navigations/watch.svg" alt=""></a>
+                </li>
+                <li class="nav_link"><a href=""><img src="images/navigations/marketplace.svg" alt=""></a></li>
+                <li class="nav_link"><a href=""><img src="images/navigations/groups.svg" alt=""></a></li>
+            </ul>
+            <div class="userActions">
+                <a href="" class="userAction">
+                    <img src="images/navigations/apps.svg" alt="">
+                </a>
+                <a href="" class="userAction">
+                    <img src="images/navigations/messenger.svg" alt="">
+                </a>
+                <a href="" class="userAction">
+                    <img src="images/navigations/notification.svg" alt="">
+                </a>
+                <div class="userInfo" onclick="settingMenuToggle()">
+                    <div class="userImg userProfileImg">
+                            <img  src="images/users/user1.jpg" width="30px">
+                    </div>
+                    <div class="leftbar_menu settingMenu">
+                        <div class="userProfile">
+                            <div class="">
+                                <div class="userProfileImg">
+                                    <img src="images/users/user1.jpg" width="30px">
+                                </div>
+                                <div class="userProfileName">
+                                    Jhon Doe
+                                </div>
+                            </div>
+                            <hr>
+                            <a href="profile.html">See all profiles</a>
+                        </div>
+                        <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt="">
+                            <span>Setting & privacy</span><i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt="">
+                            <span>Help & support</span><i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt="">
+                            <span>All
+                                Display & accessibility</span><i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt="">
+                            <span>give feedback</span></a>
+                        <a href="" class="leftbar_menu_link"><img src="images/freindPageIcons/freind.png" alt="">
+                            <span>Logout</span></a>
+                        <div class="footer sideBox">
+                            <span><a href="">privacy</a> &middot; <a href="">Terms</a> &middot; <a
+                                    href="">Advertising</a> &middot;
+                                <a href="">Ad choices</a> &middot; <a href="">Cookies</a> &middot; <a href="">More</a>
+                                &middot; <a href="">Meta &copy; 2023</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- header container -->
+    <section class="profile_headerContainer_section">
+        <div class="profileHeader">
+            <div class="coverImg">
+
+            </div>
+            <div class="profile">
+                <div class="profileDetails">
+                    <div class="profileImg">
+                        <img src="images/photosGalary/photo3.jpg" alt="" width="150px">
+                    </div>
+                    <div class="profileInfo">
+                        <h2 class="ProfileName">Jhone Doe</h2>
+                        <span class="followingAndFollowers">
+                            <a href="" class="followers"> 46k followers</a>
+                            &middot;
+                            <a href="" class="followers"> 0 following</a>
+                        </span>
+                        <div class="profileMutuals">
+                            <img src="images/users/user2.jpg" alt="" width="40px">
+                            <img src="images/users/user3.jpg" alt="" width="40px">
+                            <img src="images/users/user4.jpg" alt="" width="40px">
+                            <img src="images/users/user5.jpg" alt="" width="40px">
+                        </div>
+                    </div>
+                </div>
+                <div class="profileUserActions">
+                    <a href="" class="follow"><img src="images/follow.png" alt="">following</a>
+                    <a href="" class="follow"><i class="fa-brands fa-facebook-messenger"></i>Message</a>
+                    <a href="" class="follow"><i class="fa-solid fa-user-plus"></i> Add friend</a>
+                    <a href=""><i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="profileMenu">
+                <ul class="profileMenuItems">
+                    <li class="profileMenuItem"><a href="">post</a></li>
+                    <li class="profileMenuItem"><a href="">about</a></li>
+                    <li class="profileMenuItem"><a href="">reels</a></li>
+                    <li class="profileMenuItem"><a href="">photos</a></li>
+                    <li class="profileMenuItem"><a href="">videos</a></li>
+                    <li class="profileMenuItem"><a href="">notes</a></li>
+                    <li class="profileMenuItem"><a href="">more <i class="fa-solid fa-caret-down"></i></a></li>
+                </ul>
+                <a href="" class="more"><img src="images/postIcons/more.png" alt="" width="20px"></a>
+
+            </div>
+        </div>
+    </section>
+    <!-- main container -->
+    <section class="profile_mainContainer_section">
+        <div class="profile_mainContainer">
+            <!-- ---------------- left container -------- -->
+            <div class="profile_leftContainer">
+                <!-- intro -->
+                <div class="intro sideBox">
+                    <div class="sidmenuSectonHeading">
+                        <h3 style="font-size: 18px;font-weight: 700;">Intro</h3>
+                    </div>
+                    <span class="introText">just simple life</span>
+                    <hr>
+                    <ul class="profileInfoList">
+                        <li class="profileinfoItem"><i class="fa-solid fa-circle-info"></i><a class="" href="">Profile
+                            </a> &middot; Gaming video creator</li>
+                        <li class="profileinfoItem"><i class="fa-solid fa-briefcase"></i> Works at <a class="" href="">
+                                Los Angeles Times</a></li>
+                        <li class="profileinfoItem"><i class="fa-sharp fa-solid fa-graduation-cap"></i> Studied at <a
+                                class="" href=""> Los Angeles University</a></li>
+                        <li class="profileinfoItem"><i class="fa-sharp fa-solid fa-graduation-cap"></i> Went to <a
+                                class="" href=""> NCIS:Los Angeles</a></li>
+                        <li class="profileinfoItem"><i class="fa-sharp fa-solid fa-house-chimney"></i> Lives in <a
+                                class="" href=""> Newberry Springs, California</a></li>
+                        <li class="profileinfoItem"><i class="fa-solid fa-location-dot"></i> From <a class="" href="">
+                                Los Angeles, California</a></li>
+                        <li class="profileinfoItem"><i class="fa-solid fa-heart"></i> Single</li>
+                    </ul>
+                    <div class="hobbies">
+                        <span class="hobby">&#128095; Fitness</span>
+                        <span class="hobby">&#127974; Shopping</span>
+                        <span class="hobby">&#127829; Eating</span>
+                        <span class="hobby">&#128132; Beauty</span>
+                        <span class="hobby"> &#127917; Acting</span>
+                        <span class="hobby">&#127912; Art</span>
+                        <span class="hobby">&#127911; listening to music</span>
+                    </div>
+                </div>
+                <!-- photos -->
+                <div class="Photos sideBox">
+                    <div class="sidmenuSectonHeading">
+                        <h3 style="font-size: 18px;">photos</h3>
+                        <a style="font-size: 18px;">See All</a>
+                    </div>
+                    <div class="photoBox">
+                        <img src="images/photosGalary/photo1.jpg" class="photo">
+                        <img src="images/photosGalary/photo2.jpg" class="photo">
+                        <img src="images/photosGalary/photo3.jpg" class="photo">
+                        <img src="images/photosGalary/photo4.jpg" class="photo">
+                        <img src="images/photosGalary/photo5.jpg" class="photo">
+                        <img src="images/photosGalary/photo6.jpg" class="photo">
+                        <img src="images/photosGalary/photo7.jpg" class="photo">
+                        <img src="images/photosGalary/photo8.jpg" class="photo">
+                        <img src="images/photosGalary/photo9.jpg" class="photo">
+                    </div>
+
+                </div>
+                <!-- friends -->
+                <div class="friends sideBox">
+                    <div class="sidmenuSectonHeading">
+                        <h3 style="font-size: 18px;">friends</h3>
+                        <a style="font-size: 18px;">See All</a>
+                    </div>
+                    <span>11 friends</span>
+
+                    <div class="friendBox">
+                        <div class="friend">
+                            <img src="images/freinds/friend1.jpg" class="friend">
+                        </div>
+                        <div class="friend">
+                            <img src="images/freinds/friend2.jpg" class="friend">
+                        </div>
+                        <div class="friend">
+                            <img src="images/freinds/friend3.jpg" class="friend">
+                        </div>
+                        <div class="friend">
+                            <img src="images/freinds/friend4.jpg" class="friend">
+                        </div>
+                        <div class="friend">
+                            <img src="images/freinds/friend5.jpg" class="friend">
+                        </div>
+                        <div class="friend">
+                            <img src="images/freinds/friend6.jpg" class="friend">
+                        </div>
+                        <div class="friend">
+                            <img src="images/freinds/friend7.jpg" class="friend">
+                        </div>
+                        <div class="friend">
+                            <img src="images/freinds/friend8.jpg" class="friend">
+                        </div>
+                        <div class="friend">
+                            <img src="images/freinds/friend1.jpg" class="friend">
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- life events -->
+                <div class="lifeEvents sideBox">
+                    <div class="sidmenuSectonHeading">
+                        <h3 style="font-size: 18px;">Life Events</h3>
+                        <a style="font-size: 18px;">See All</a>
+                    </div>
+                    <div class="lifeEventsBox">
+                        <div class="lifeEvent">
+                            <i class="fa-sharp fa-solid fa-graduation-cap"></i>
+                            <h3> Started studying at NCIS: Los Angeles</h3>
+                            <span>9 January</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="shortcuts sideBox">
+                <div class="sidmenuSectonHeading">
+                    <h3>your shortcuts</h3>
+                </div>
+                <a href="" class="shortcut">
+                    <img src="images/sideMenuIcons/history.png" alt="">
+                    <span>UI/UX designer</span>
+                </a>
+                <a href="" class="shortcut">
+                    <img src="images/sideMenuIcons/history.png" alt="">
+                    <span>Web Developer</span>
+                </a>
+                <a href="" class="shortcut">
+                    <img src="images/sideMenuIcons/history.png" alt="">
+                    <span>full stack Developer</span>
+                </a>
+                <a href="" class="shortcut">
+                    <img src="images/sideMenuIcons/history.png" alt="">
+                    <span>Muzffar Shaikh</span>
+                </a>
+                <a href="" class="shortcut">
+                    <span style="color: #1da1f2;">see more</span>
+                </a>
+            </div>
+                <!-- footer -->
+                <div class="footer sideBox">
+                    <span><a href="">privacy</a> &middot; <a href="">Terms</a> &middot; <a href="">Advertising</a>
+                        &middot; <a href="">Ad choices</a> &middot; <a href="">Cookies</a> &middot; <a href="">More</a>
+                        &middot; <a href="">Meta &copy; 2023</a></span>
+                </div>
+            </div>
+
+            <!-- ---------------- right container -------- -->
+            <div class="profile_rightContainer">
+                <!-- filter  -->
+                <div class="filter sideBox">
+                    <div class="sidmenuSectonHeading">
+                        <h2 style="font-size: 20px;font-weight: 600;">Posts</h2>
+                        <a style="font-size: 18px;"><img src="images/setting.png" alt=""> <span>Filters</span></a>
+                    </div>
+                </div>
+
+                <!-- posts -->
+
+                <div class="post ">
+                    <div class="user">
+                        <div class="userImg">
+                            <img src="images/photosGalary/photo3.jpg" alt="">
+                        </div>
+                        <div class="userInformation">
+                            <span class="name">Jhon Doe</span>
+                            <span class="postStatus">rome, italy &middot; 5 min ago &middot; <box-icon
+                                    name='world'></box-icon></span>
+                        </div>
+                    </div>
+                    <p class="postDescription">Happy Birthday &#127881;&#127882;&#129321; <span
+                            class="hashtags">@jhonDoe</span></p>
+                    <img class="postImg" src="images/photosGalary/photo1.jpg" alt="">
+                    <div class="postReactions">
+                        <div class="likes">
+                            <div>
+                                <img src="images/postIcons/liked2.png" alt="">
+                                <img src="images/postIcons/love.png" alt="">
+                            </div>
+                            <span>You and 20k others</span>
+                        </div>
+                        <div class="commentsAndShares">
+                            <a href="" class="comments">2.2k <img src="images/postIcons/comment.png"></a>
+                            <a href="" class="comments">5k <img src="images/postIcons/share.png"></a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="postUserActions">
+                        <a href="" class="like"><img src="images/postIcons/liked.png"><span>Like</span></a>
+                        <a href="" class="comment"><img src="images/postIcons/comment.png"><span>Comment</span></a>
+                        <a href="" class="share"><img src="images/postIcons/share.png"><span>Share</span></a>
+                    </div>
+                    <a href="" class="more"><img src="images/postIcons/more.png" alt="" width="20px"></a>
+                </div>
+
+
+                <div class="post ">
+                    <div class="user">
+                        <div class="userImg">
+                            <img src="images/photosGalary/photo3.jpg" alt="">
+                        </div>
+                        <div class="userInformation">
+                            <span class="name">Jhon Doe</span>
+                            <span class="postStatus">rome, italy &middot; 5 min ago &middot; <box-icon
+                                    name='world'></box-icon></span>
+                        </div>
+                    </div>
+                    <p class="postDescription">Happy Birthday &#127881;&#127882;&#129321; <span
+                            class="hashtags">@jhonDoe</span></p>
+                    <img class="postImg" src="images/photosGalary/photo2.jpg" alt="">
+                    <div class="postReactions">
+                        <div class="likes">
+                            <div>
+                                <img src="images/postIcons/liked2.png" alt="">
+                                <img src="images/postIcons/love.png" alt="">
+                            </div>
+                            <span>You and 20k others</span>
+                        </div>
+                        <div class="commentsAndShares">
+                            <a href="" class="comments">2.2k <img src="images/postIcons/comment.png"></a>
+                            <a href="" class="comments">5k <img src="images/postIcons/share.png"></a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="postUserActions">
+                        <a href="" class="like"><img src="images/postIcons/liked.png"><span>Like</span></a>
+                        <a href="" class="comment"><img src="images/postIcons/comment.png"><span>Comment</span></a>
+                        <a href="" class="share"><img src="images/postIcons/share.png"><span>Share</span></a>
+                    </div>
+                    <a href="" class="more"><img src="images/postIcons/more.png" alt="" width="20px"></a>
+                </div>
+
+                <div class="post ">
+                    <div class="user">
+                        <div class="userImg">
+                            <img src="images/photosGalary/photo3.jpg" alt="">
+                        </div>
+                        <div class="userInformation">
+                            <span class="name">Jhon Doe</span>
+                            <span class="postStatus">rome, italy &middot; 5 min ago &middot; <box-icon
+                                    name='world'></box-icon></span>
+                        </div>
+                    </div>
+                    <p class="postDescription">Happy Birthday &#127881;&#127882;&#129321; <span
+                            class="hashtags">@jhonDoe</span></p>
+                    <img class="postImg" src="images/photosGalary/photo3.jpg" alt="">
+                    <div class="postReactions">
+                        <div class="likes">
+                            <div>
+                                <img src="images/postIcons/liked2.png" alt="">
+                                <img src="images/postIcons/love.png" alt="">
+                            </div>
+                            <span>You and 20k others</span>
+                        </div>
+                        <div class="commentsAndShares">
+                            <a href="" class="comments">2.2k <img src="images/postIcons/comment.png"></a>
+                            <a href="" class="comments">5k <img src="images/postIcons/share.png"></a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="postUserActions">
+                        <a href="" class="like"><img src="images/postIcons/liked.png"><span>Like</span></a>
+                        <a href="" class="comment"><img src="images/postIcons/comment.png"><span>Comment</span></a>
+                        <a href="" class="share"><img src="images/postIcons/share.png"><span>Share</span></a>
+                    </div>
+                    <a href="" class="more"><img src="images/postIcons/more.png" alt="" width="20px"></a>
+                </div>
+
+                <div class="post ">
+                    <div class="user">
+                        <div class="userImg">
+                            <img src="images/photosGalary/photo3.jpg" alt="">
+                        </div>
+                        <div class="userInformation">
+                            <span class="name">Jhon Doe</span>
+                            <span class="postStatus">rome, italy &middot; 5 min ago &middot; <box-icon
+                                    name='world'></box-icon></span>
+                        </div>
+                    </div>
+                    <p class="postDescription">Happy Birthday &#127881;&#127882;&#129321; <span
+                            class="hashtags">@jhonDoe</span></p>
+                    <img class="postImg" src="images/photosGalary/photo4.jpg" alt="">
+                    <div class="postReactions">
+                        <div class="likes">
+                            <div>
+                                <img src="images/postIcons/liked2.png" alt="">
+                                <img src="images/postIcons/love.png" alt="">
+                            </div>
+                            <span>You and 20k others</span>
+                        </div>
+                        <div class="commentsAndShares">
+                            <a href="" class="comments">2.2k <img src="images/postIcons/comment.png"></a>
+                            <a href="" class="comments">5k <img src="images/postIcons/share.png"></a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="postUserActions">
+                        <a href="" class="like"><img src="images/postIcons/liked.png"><span>Like</span></a>
+                        <a href="" class="comment"><img src="images/postIcons/comment.png"><span>Comment</span></a>
+                        <a href="" class="share"><img src="images/postIcons/share.png"><span>Share</span></a>
+                    </div>
+                    <a href="" class="more"><img src="images/postIcons/more.png" alt="" width="20px"></a>
+                </div>
+
+                <div class="post ">
+                    <div class="user">
+                        <div class="userImg">
+                            <img src="images/photosGalary/photo3.jpg" alt="">
+                        </div>
+                        <div class="userInformation">
+                            <span class="name">Jhon Doe</span>
+                            <span class="postStatus">rome, italy &middot; 5 min ago &middot; <box-icon
+                                    name='world'></box-icon></span>
+                        </div>
+                    </div>
+                    <p class="postDescription">Happy Birthday &#127881;&#127882;&#129321; <span
+                            class="hashtags">@jhonDoe</span></p>
+                    <img class="postImg" src="images/photosGalary/photo5.jpg" alt="">
+                    <div class="postReactions">
+                        <div class="likes">
+                            <div>
+                                <img src="images/postIcons/liked2.png" alt="">
+                                <img src="images/postIcons/love.png" alt="">
+                            </div>
+                            <span>You and 20k others</span>
+                        </div>
+                        <div class="commentsAndShares">
+                            <a href="" class="comments">2.2k <img src="images/postIcons/comment.png"></a>
+                            <a href="" class="comments">5k <img src="images/postIcons/share.png"></a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="postUserActions">
+                        <a href="" class="like"><img src="images/postIcons/liked.png"><span>Like</span></a>
+                        <a href="" class="comment"><img src="images/postIcons/comment.png"><span>Comment</span></a>
+                        <a href="" class="share"><img src="images/postIcons/share.png"><span>Share</span></a>
+                    </div>
+                    <a href="" class="more"><img src="images/postIcons/more.png" alt="" width="20px"></a>
+                </div>
+                <div class="post ">
+                    <div class="user">
+                        <div class="userImg">
+                            <img src="images/photosGalary/photo6.jpg" alt="">
+                        </div>
+                        <div class="userInformation">
+                            <span class="name">Jhon Doe</span>
+                            <span class="postStatus">rome, italy &middot; 5 min ago &middot; <box-icon
+                                    name='world'></box-icon></span>
+                        </div>
+                    </div>
+                    <p class="postDescription">Happy Birthday &#127881;&#127882;&#129321; <span
+                            class="hashtags">@jhonDoe</span></p>
+                    <img class="postImg" src="images/photosGalary/photo6.jpg" alt="">
+                    <div class="postReactions">
+                        <div class="likes">
+                            <div>
+                                <img src="images/postIcons/liked2.png" alt="">
+                                <img src="images/postIcons/love.png" alt="">
+                            </div>
+                            <span>You and 20k others</span>
+                        </div>
+                        <div class="commentsAndShares">
+                            <a href="" class="comments">2.2k <img src="images/postIcons/comment.png"></a>
+                            <a href="" class="comments">5k <img src="images/postIcons/share.png"></a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="postUserActions">
+                        <a href="" class="like"><img src="images/postIcons/liked.png"><span>Like</span></a>
+                        <a href="" class="comment"><img src="images/postIcons/comment.png"><span>Comment</span></a>
+                        <a href="" class="share"><img src="images/postIcons/share.png"><span>Share</span></a>
+                    </div>
+                    <a href="" class="more"><img src="images/postIcons/more.png" alt="" width="20px"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        let userProfile=document.querySelector('.userProfileImg');
+        let settingMenu=document.querySelector('.settingMenu');
+        userProfile.addEventListener('click',()=>{
+            settingMenu.classList.toggle('show')
+        })
+        function settingMenuToggle(){
+
+        }
+    </script>
+</body>
+
+</html>
