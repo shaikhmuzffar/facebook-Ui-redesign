@@ -24,7 +24,7 @@ This project is built using the following technologies:
 
 To run the Facebook Clone 4 project locally, follow these steps:
 
-1. Clone this repository to your local machine using `git clone https://github.com/your-username/facebook-clone-4.git`
+1. Clone this repository to your local machine using `git clone (https://github.com/shaikhmuzffar/facebook-Ui-redesign)`
 2. Navigate to the project directory with `cd facebook-clone-4`
 3. Open the `index.html` file in your web browser
 
@@ -43,7 +43,7 @@ To run the Facebook Clone 4 project locally, follow these steps:
 
 ## Demo
 
-Check out the live demo of the project [here](https://your-demo-link.com) (replace "your-demo-link.com" with the actual link).
+Check out the live demo of the project.
 
 ## Contributions
 
